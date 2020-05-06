@@ -60,6 +60,7 @@ def main():
         main()
     elif escolha==3:
         somaRomano()
+        os.system('pause')
         os.system('cls')
         main()
     elif escolha==4:
@@ -161,7 +162,7 @@ def somaRomano():
         escolha=int(input())
         if escolha!=1:
             print("Soma em romano: "+paraRomano(soma)+"\n")
-            return 0  
+            return 0
 
 
 print("------CONVERSOR PARA NÚMEROS ROMANOS(ATÉ "+str(limite-1)+")"+"------\n")
