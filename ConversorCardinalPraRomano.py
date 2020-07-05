@@ -161,6 +161,7 @@ def somaRomano():
         print("Deseja continuar (1 para SIM)")
         escolha=int(input())
         if escolha!=1:
+            validador(soma)
             print("Soma em romano: "+paraRomano(soma)+"\n")
             return 0
 
