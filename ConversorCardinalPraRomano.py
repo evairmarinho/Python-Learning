@@ -1,11 +1,11 @@
 import os
 
-#lista necessária para convertemos números até a variável limite-1
+# lista necessária para convertemos números até a variável limite-1
 romanos = ["","I","II", "III", "IV", "V" ,"VI" ,"VII", "VIII","IX","X","L","C","D","M"] 
 
 limite = 4000
 
-#convete qualquer número até limite-1 para romano
+# convete qualquer número até limite-1 para romano
 def paraRomano(n): 
     cont = 0
     for i in romanos:
@@ -42,7 +42,7 @@ def paraRomano(n):
             return romanos[14]+romanos[14]+romanos[14]+paraRomano(n-3000)
         cont += 1
         
-#chama o menu principal do usuário
+# chama o menu principal do usuário
 def main():
     print("\nDigite uma opção\n")
     print("1 - Converter um número cardinal\n")
@@ -71,7 +71,7 @@ def main():
         print("Opção inválida")
         main()
 
-#valida se o número tem a possibilidade de ser convertido para romano
+# valida se o número tem a possibilidade de ser convertido para romano
 def validador(n):
     if n == 0:
         print("Não existe em romanos o 0!\n")
@@ -84,7 +84,7 @@ def validador(n):
         main()
 
 
-#converte uma data
+# converte uma data
 def dataParaRomano (dia,mes,ano):
     if (dia > 0 and dia < 32) and (mes > 0 and mes < 13):
         if mes == 2:
@@ -115,7 +115,7 @@ def dataParaRomano (dia,mes,ano):
         return dataParaRomanoUsuario()
 
 
-#interação I/O com usuário para converter a data escolhida
+# interação I/O com usuário para converter a data escolhida
 def dataParaRomanoUsuario():
     print("Digite uma data:\n")
     print("Digite o dia")
@@ -135,7 +135,7 @@ def dataParaRomanoUsuario():
             dataParaRomanoUsuario()
         
 
-#interage via I/O com usuário para converter o cardinal escolhido
+# interage via I/O com usuário para converter o cardinal escolhido
 def paraRomanoUsuario():
     print("Digite o número cardinal:")
     num = int(input())
@@ -147,7 +147,7 @@ def paraRomanoUsuario():
         paraRomanoUsuario()
 
 
-#converte o resultado de uma soma
+# converte o resultado de uma soma
 def somaRomano():
     soma = 0
     print("Digite o primeiro valor:")
@@ -165,6 +165,6 @@ def somaRomano():
             print("Soma em romano: "+ paraRomano(soma) +"\n")
             return 0
 
-
+# início do programa - mensagem inicial + chamada da função main
 print("------CONVERSOR PARA NÚMEROS ROMANOS (ATÉ "+ str(limite-1)+ ")------\n")
 main()
