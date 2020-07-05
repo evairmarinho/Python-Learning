@@ -1,7 +1,7 @@
 import os
 
 #lista necessária para convertemos números até a variável limite-1
-romanos=['','I','II', 'III', 'IV', 'V' ,'VI' ,'VII', 'VIII','IX','X','L','C','D','M'] 
+romanos=["","I","II", "III", "IV", "V" ,"VI" ,"VII", "VIII","IX","X","L","C","D","M"] 
 
 limite=4000
 
@@ -52,15 +52,15 @@ def main():
     escolha=int(input())
     if escolha==1:
         paraRomanoUsuario()
-        os.system('cls')
+        os.system("cls")
         main()
     elif escolha==2:
         dataParaRomanoUsuario()
-        os.system('cls')
+        os.system("cls")
         main()
     elif escolha==3:
         somaRomano()
-        os.system('pause')
+        os.system("pause")
         os.system('cls')
         main()
     elif escolha==4:
@@ -74,10 +74,10 @@ def main():
 #valida se o número tem a possibilidade de ser convertido para romano
 def validador(n):
     if n==0:
-        print('Não existe em romanos o 0!\n')
+        print("Não existe em romanos o 0!\n")
         main()
     elif n<0:
-        print('Apenas números positivos!\n')
+        print("Apenas números positivos!\n")
         main()
     elif n>=limite:
         print("Conversor suporta conversão até o número "+str(limite-1)+"\n")
@@ -117,14 +117,14 @@ def dataParaRomano (dia,mes,ano):
 
 #interação I/O com usuário para converter a data escolhida
 def dataParaRomanoUsuario():
-    print('Digite uma data:\n')
-    print('Digite o dia')
+    print("Digite uma data:\n")
+    print("Digite o dia")
     dia =int(input())
     validador(dia)
-    print('Digite o mês(Número)')
+    print("Digite o mês(Número)")
     mes =int(input())
     validador(mes)
-    print('Digite o ano')
+    print("Digite o ano")
     ano =int(input())
     validador(ano)
     if(dataParaRomano(dia,mes,ano)!=None):
