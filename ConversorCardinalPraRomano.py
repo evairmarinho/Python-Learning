@@ -7,8 +7,6 @@ romanos = ["", "I", "II", "III", "IV", "V", "VI",
 limite = 4000
 
 # convete qualquer número até limite-1 para romano
-
-
 def paraRomano(n):
     cont = 0
     for i in romanos:
@@ -77,8 +75,6 @@ def main():
         main()
 
 # valida se o número tem a possibilidade de ser convertido para romano
-
-
 def validador(n):
     if n == 0:
         print("Não existe em romanos o 0!\n")
