@@ -1,2 +1,2 @@
-# CodigosPython
-Códigos feitos durante o aprendizado de Python (Qualquer dica pode falar :D ).
+# Python-Learning
+Code made while learning Python (Tips are always welcome: D).
